@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img src="./asset/fight.jpg" style="object-fit: cover" />
+        <div class="project-title">
+          <div>
+            <img src="./asset/odin-lined.png" alt="" />
+          </div>
+          <p>ODIN</p>
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <h2 class="sub-title">Welcome to the fight Club!</h2>
+          <p class="title">
+            The first rule of Fight Club is: You do not talk about Fight Club.
+            <br /><br />
+            The second rule of Fight Club is: You do not talk about Fight Club.
+          </p>
+
+          <div>
+            <p class="article">Let's do this</p>
+            <form class="form">
+              <div class="input-container">
+                <label for="">first name</label>
+                <input type="text" required />
+              </div>
+              <div class="input-container">
+                <label for="">last name</label>
+                <input type="text" required />
+              </div>
+              <div class="input-container">
+                <label for="">email</label>
+                <input type="email" required />
+              </div>
+              <div class="input-container">
+                <label for="">Phone</label>
+                <input type="text" required />
+              </div>
+
+              <div class="input-container">
+                <label for="">password</label>
+                <input
+                  type="password"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$"
+                  required
+                />
+              </div>
+              <div class="input-container">
+                <label for="">confirm password</label>
+                <input
+                  type="password"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$"
+                  required
+                />
+              </div>
+              <div>
+                <button>create account</button>
+                <p class="login">
+                  already have an account ? <span><a href="">login</a></span>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(24, 24, 24);
+  color: #fff;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow-y: hidden;
+}
+.left {
+  width: 40%;
+  position: relative;
+}
+.project-title {
+  position: absolute;
+  top: 20%;
+  height: 80px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  gap: 7px;
+}
+.project-title div {
+  height: 70px;
+  width: 50px;
+}
+.project-title p {
+  font-size: 28px;
+  color: #fff;
+}
+.right {
+  flex: 1;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+}
+.sub-title,
+.right .title,
+.article {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+.sub-title {
+  color: #9cc07d;
+  margin-top: 50px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.article {
+  margin-top: 60px;
+}
+.form {
+  display: grid;
+  grid-template-columns: 35% 35%;
+  gap: 20px 60px;
+}
+input {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: #e5e7eb solid 2px;
+  font-size: 16px;
+  transition: 0.3s;
+  background: rgb(24, 24, 24);
+}
+
+input:invalid {
+  border: red solid 2px;
+}
+input:focus {
+  outline: none;
+  border: rgb(105, 105, 211) solid 2px;
+}
+
+label {
+  text-transform: uppercase;
+  color: rgb(143, 142, 142);
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  padding: 14px 18px;
+  background: #596d48;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-transform: capitalize;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: 0.4s;
+  border: none;
+}
+button:hover {
+  background-color: rgb(51, 51, 182);
+}
+.login {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  color: #9cc07d;
+  text-transform: uppercase;
+  text-decoration: none;
+}
