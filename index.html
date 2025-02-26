@@ -28,41 +28,44 @@
 
           <div>
             <p class="article">Let's do this</p>
-            <form class="form">
-              <div class="input-container">
-                <label for="">first name</label>
-                <input type="text" required />
-              </div>
-              <div class="input-container">
-                <label for="">last name</label>
-                <input type="text" required />
-              </div>
-              <div class="input-container">
-                <label for="">email</label>
-                <input type="email" required />
-              </div>
-              <div class="input-container">
-                <label for="">Phone</label>
-                <input type="text" required />
+            <form>
+              <div class="form">
+                <div class="input-container">
+                  <label for="">first name</label>
+                  <input type="text" required />
+                </div>
+                <div class="input-container">
+                  <label for="">last name</label>
+                  <input type="text" required />
+                </div>
+                <div class="input-container">
+                  <label for="">email</label>
+                  <input type="email" required />
+                </div>
+                <div class="input-container">
+                  <label for="">Phone</label>
+                  <input type="text" required />
+                </div>
+
+                <div class="input-container">
+                  <label for="">password</label>
+                  <input
+                    type="password"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$"
+                    required
+                  />
+                </div>
+                <div class="input-container">
+                  <label for="">confirm password</label>
+                  <input
+                    type="password"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$"
+                    required
+                  />
+                </div>
               </div>
 
-              <div class="input-container">
-                <label for="">password</label>
-                <input
-                  type="password"
-                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$"
-                  required
-                />
-              </div>
-              <div class="input-container">
-                <label for="">confirm password</label>
-                <input
-                  type="password"
-                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$"
-                  required
-                />
-              </div>
-              <div>
+              <div class="login-container">
                 <button>create account</button>
                 <p class="login">
                   already have an account ? <span><a href="">login</a></span>
